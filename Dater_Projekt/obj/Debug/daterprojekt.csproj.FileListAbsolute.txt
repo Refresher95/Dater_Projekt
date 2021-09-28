@@ -13,3 +13,5 @@ C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.csproj.GenerateRe
 C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.exe
 C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.pdb
+C:\Users\user\source\repos\daterprojekt\obj\Debug\Login.g.cs
+C:\Users\user\source\repos\daterprojekt\obj\Debug\Login.baml
