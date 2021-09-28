@@ -23,10 +23,20 @@ namespace daterprojekt
         {
             InitializeComponent();
             string formatedDateForMySql = "2004-10-12";
+            ///string query = "INSERT INTO user (vorname, nachname, geburtsdatum, geschlecht, username, password) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + formatedDateForMySql + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
             string query = "INSERT INTO user (vorname, nachname, geburtsdatum, geschlecht, username, password) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + formatedDateForMySql + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
 
 
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Register_confirm_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

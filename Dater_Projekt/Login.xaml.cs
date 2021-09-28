@@ -62,15 +62,35 @@ namespace daterprojekt
             {
                 con.Close();
             }
-
-            ///            Login LogInWindow = new Login();
-            ///            MainWindow MainWindow = new MainWindow();
-            ///            MainWindow.Show();
-            ///            this.Close();
         }
 
-        private void Button_Click()
+        private void Register_Click(object sender, RoutedEventArgs e)
         {
+            string query = "SELECT Benutzer_Vorname,Benutzer_Nachname FROM benutzer_table WHERE Benutzer_Nutzername = '" + txtbox.Text.Trim() + "' AND Benutzer_Passwort = '" + pwbox.Password.Trim() + "'";
+            // Login LogInWindow = new Login();
+            ///this.Close();
+
+            MySqlConnection con = new MySqlConnection("server=127.0.0.1;username=root;password=;database=dater_benutzer_datensätze");
+            try
+            {
+               //MySqlDataAdapter msda = new MySqlDataAdapter(con);
+               // DataTable DT = new DataTable();
+                //msda.Fill(DT);
+                //if (DT.Rows.Count == 1)
+                //{
+                    Registration Registration = new Registration();
+                    Registration.Show();
+                //}
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
 
         }
     }

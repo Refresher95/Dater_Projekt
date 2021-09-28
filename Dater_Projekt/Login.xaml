@@ -16,7 +16,8 @@
         <PasswordBox Name="pwbox" Background="Wheat" HorizontalAlignment="Stretch" Margin="150,239,142,0" VerticalAlignment="Top" Height="27"/>
 
         <!-- Login -->
-        <Button Background="LightGray"  Content="Confirm" Click="Login_Click" HorizontalAlignment="Stretch" Margin="10,303,10,29"/>
+        <Button Background="LightGray"  Content="Confirm" Click="Login_Click" HorizontalAlignment="Stretch" Margin="93,329,67,44"/>
+        <Button Background="Gold"  Content="Registrieren" Click="Register_Click" HorizontalAlignment="Stretch" Margin="93,378,67,0"/>
 
     </Grid>
 </Window>

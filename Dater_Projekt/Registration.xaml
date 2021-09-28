@@ -13,25 +13,25 @@
         </Grid.ColumnDefinitions>
         <Label Background="Aquamarine" Content="Registration" HorizontalAlignment="Stretch" Margin="68.5,0,321,0" VerticalAlignment="Top" Height="120" Width="250" Grid.Column="1"/>
 
-        <TextBlock HorizontalAlignment="Stretch" Margin="9,204,83.5,0" TextWrapping="Wrap" Text="Vorname" VerticalAlignment="Top" Height="52" Width="160"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="9,204,83.5,0" TextWrapping="Wrap" Text="Vorname" VerticalAlignment="Top" Height="52" Width="160" FontSize="22"/>
         <TextBox Name="txtvorname" HorizontalAlignment="Stretch" Height="52" Margin="224.5,204,268,0" TextWrapping="Wrap" Text="Vorname" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <TextBlock HorizontalAlignment="Stretch" Margin="9,261,83.5,0" TextWrapping="Wrap" Text="Nachname" VerticalAlignment="Top" Height="51" Width="160"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="9,261,83.5,0" TextWrapping="Wrap" Text="Nachname" VerticalAlignment="Top" Height="51" Width="160" FontSize="22"/>
         <TextBox Name="txtnachanme" HorizontalAlignment="Stretch" Height="52" Margin="224.5,260,268,0" TextWrapping="Wrap" Text="Nachname" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <TextBlock HorizontalAlignment="Stretch" Margin="9,384,83.5,0" TextWrapping="Wrap" Text="Geburtstagsdatum" VerticalAlignment="Top" Height="52" Width="160"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="9,384,83.5,0" TextWrapping="Wrap" Text="Geburtstagsdatum" VerticalAlignment="Top" Height="52" Width="160" FontSize="22"/>
         <TextBox Name="txtgeburtsdatum" HorizontalAlignment="Stretch" Height="52" Margin="224.5,383,268,0" TextWrapping="Wrap" Text="Geburtstagsdatum" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <TextBlock HorizontalAlignment="Stretch" Margin="9,441,83.5,0" TextWrapping="Wrap" Text="Geschlecht" VerticalAlignment="Top" Height="51" Width="160"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="9,441,83.5,0" TextWrapping="Wrap" Text="Geschlecht" VerticalAlignment="Top" Height="51" Width="160" FontSize="22"/>
         <TextBox Name="txtgeschlecht" HorizontalAlignment="Stretch" Height="52" Margin="224.5,441,268,0" TextWrapping="Wrap" Text="Geschlecht" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <TextBlock HorizontalAlignment="Stretch" Margin="9,552,83.5,0" TextWrapping="Wrap" Text="Nutzername" VerticalAlignment="Top" Height="51" Width="160"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="9,552,83.5,0" TextWrapping="Wrap" Text="Nutzername" VerticalAlignment="Top" Height="51" Width="160" FontSize="22"/>
         <TextBox Name="txtnutzername" HorizontalAlignment="Stretch" Height="52" Margin="224.5,551,268,0" TextWrapping="Wrap" Text="Nutzername" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <TextBlock HorizontalAlignment="Stretch" Margin="9,608,83.5,0" TextWrapping="Wrap" Text="Passwort" VerticalAlignment="Top" Height="51" Width="160"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="9,608,83.5,0" TextWrapping="Wrap" Text="Passwort" VerticalAlignment="Top" Height="51" Width="160" FontSize="22"/>
         <TextBox Name="txtpasswort" HorizontalAlignment="Stretch" Height="52" Margin="224.5,607,268,0" TextWrapping="Wrap" Text="Passwort" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <Button Content="Button" HorizontalAlignment="Stretch" Margin="493.5,542,14,0" VerticalAlignment="Top" Width="132" Height="113" Grid.Column="1"/>
+        <Button Content="Button" Click="Register_confirm_Click" HorizontalAlignment="Stretch" Margin="493.5,542,14,0" VerticalAlignment="Top" Width="132" Height="113" Grid.Column="1" Cursor="None"/>
 
     </Grid>
 </Window>
