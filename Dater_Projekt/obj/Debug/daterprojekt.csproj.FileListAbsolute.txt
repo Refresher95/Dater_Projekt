@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\daterprojekt\bin\Debug\daterprojekt.exe.config
+C:\Users\user\source\repos\daterprojekt\bin\Debug\daterprojekt.exe
+C:\Users\user\source\repos\daterprojekt\bin\Debug\daterprojekt.pdb
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.csprojAssemblyReference.cache
+C:\Users\user\source\repos\daterprojekt\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\daterprojekt\obj\Debug\App.g.cs
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt_MarkupCompile.cache
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt_MarkupCompile.lref
+C:\Users\user\source\repos\daterprojekt\obj\Debug\MainWindow.baml
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.g.resources
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.Properties.Resources.resources
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.csproj.GenerateResource.cache
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.exe
+C:\Users\user\source\repos\daterprojekt\obj\Debug\daterprojekt.pdb
