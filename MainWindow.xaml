@@ -1,0 +1,34 @@
+﻿<Window x:Class="daterprojekt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:daterprojekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1200" Width="1400">
+    <!-- Tabelle START-->
+    <Grid Name="Haupttabelle" Background="BlueViolet" Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="0*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+    <!-- Tabelle STOP-->
+
+        <TextBox HorizontalAlignment="Stretch" Margin="10" Grid.Row="0" TextWrapping="Wrap" Text="Info" VerticalAlignment="Stretch" FontSize="24"/>
+
+        <Image Name="bild1" Margin="10,10,10,10" Source="Bild1.jpg" Stretch="Fill" Grid.Column="1"/>
+
+        <Button HorizontalAlignment="Stretch" Margin="96,0,564,0" VerticalAlignment="Stretch" Width="125" Height="90" Content="Dislike" FontSize="24" Click="Button_Click_1" Grid.Row="1" Grid.Column="1"/>
+        <Button HorizontalAlignment="Stretch" Margin="564,0,95,0" VerticalAlignment="Stretch" Width="125" Height="90" Content="Like" FontSize="24" Click="Button_Click_2" RenderTransformOrigin="0.56,0.089" Grid.Column="1" Grid.Row="1"/>
+
+        <Button HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Width="125" Height="90" Content="Merken" FontSize="24" Click="Button_Click_3" Grid.Row="2" Grid.Column="3"/>
+        <Grid Name="Merktabelle" Background="DarkOrange" Grid.Column="3" HorizontalAlignment="Left" Height="1001" Margin="36,10,0,0" VerticalAlignment="Top" Width="144"/>
+
+    </Grid>
+</Window>
