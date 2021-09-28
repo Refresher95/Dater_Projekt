@@ -1,5 +1,10 @@
 ﻿using System;
+/// eigens hinzugefügt START
+using MySql.Data.MySqlClient;
+using System.Data;
+/// eigens hinzugefügt STOP
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,14 +27,51 @@ namespace daterprojekt
         public Login()
         {
             InitializeComponent();
+            MySqlConnection con = new MySqlConnection("server=127.0.0.1;port=3306;username=root;password=;database=dater_benutzer_datensätze");
+            string query = "SELECT Benutzer_Vorname,Benutzer_Nachname FROM benutzer_table WHERE Benutzer_Nutzername = '" + txtbox.Text.Trim() + "' AND Benutzer_Passwort = '" + pwbox.Password.Trim() + "'";
+            con.Open();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
-            Login LogInWindow = new Login();
-            MainWindow MainWindow = new MainWindow();
-            MainWindow.Show();
-            this.Close();
+            string query = "SELECT Benutzer_Vorname,Benutzer_Nachname FROM benutzer_table WHERE Benutzer_Nutzername = '" + txtbox.Text.Trim() + "' AND Benutzer_Passwort = '" + pwbox.Password.Trim() + "'";
+            // Login LogInWindow = new Login();
+            ///this.Close();
+
+            MySqlConnection con = new MySqlConnection("server=127.0.0.1;username=root;password=;database=dater_benutzer_datensätze");
+            try
+            {
+                MySqlDataAdapter msda = new MySqlDataAdapter(query,con);
+                DataTable DT = new DataTable();
+                msda.Fill(DT);
+                if (DT.Rows.Count == 1)
+                {
+                    Registration Registration = new Registration();
+                    MainWindow MainWindow = new MainWindow();
+                    MainWindow.Show();
+                    Registration.Show();
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            ///            Login LogInWindow = new Login();
+            ///            MainWindow MainWindow = new MainWindow();
+            ///            MainWindow.Show();
+            ///            this.Close();
+        }
+
+        private void Button_Click()
+        {
+
         }
     }
 }

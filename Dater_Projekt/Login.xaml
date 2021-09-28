@@ -7,14 +7,16 @@
         mc:Ignorable="d"
         Title="Login" Background="MediumPurple" Height="450" Width="450">
     <Grid>
-        <Button Background="LightGray"  Content="Confirm" Click="Button_Click" HorizontalAlignment="Stretch" Margin="10,303,10,29"/>
         <Label Background="LightGoldenrodYellow"  Content="        Login" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="422" Height="96" FontSize="60" Margin="10,10,0,0"/>
-        
+        <!-- Eingabe Name-->
         <Label Background="WhiteSmoke"  Content="Name:" HorizontalAlignment="Stretch" Margin="150,141,142,0" VerticalAlignment="Top" Height="27"/>
-        <TextBox Background="Wheat" HorizontalAlignment="Stretch" Height="29" Margin="150,173,142,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-
+        <TextBox x:Name="txtbox" Background="Wheat" HorizontalAlignment="Stretch" Height="29" Margin="150,173,142,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <!-- Eingabe Passwort -->
         <Label Background="WhiteSmoke"  Content="Passwort:" HorizontalAlignment="Stretch" Margin="150,207,142,0" VerticalAlignment="Top" Height="27"/>
-        <PasswordBox Background="Wheat" HorizontalAlignment="Stretch" Margin="150,239,142,0" VerticalAlignment="Top" Height="27"/>
-        
+        <PasswordBox Name="pwbox" Background="Wheat" HorizontalAlignment="Stretch" Margin="150,239,142,0" VerticalAlignment="Top" Height="27"/>
+
+        <!-- Login -->
+        <Button Background="LightGray"  Content="Confirm" Click="Login_Click" HorizontalAlignment="Stretch" Margin="10,303,10,29"/>
+
     </Grid>
 </Window>
