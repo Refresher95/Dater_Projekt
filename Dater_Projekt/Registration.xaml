@@ -31,7 +31,7 @@
         <TextBlock HorizontalAlignment="Stretch" Margin="9,608,83.5,0" TextWrapping="Wrap" Text="Passwort" VerticalAlignment="Top" Height="51" Width="160" FontSize="22"/>
         <TextBox Name="txtpasswort" HorizontalAlignment="Stretch" Height="52" Margin="224.5,607,268,0" TextWrapping="Wrap" Text="Passwort" VerticalAlignment="Top" Width="147" Grid.Column="1"/>
 
-        <Button Content="Button" Click="Register_confirm_Click" HorizontalAlignment="Stretch" Margin="493.5,542,14,0" VerticalAlignment="Top" Width="132" Height="113" Grid.Column="1" Cursor="None"/>
+        <Button Content="Reg_confirm" Click="Register_confirm_Click" HorizontalAlignment="Stretch" Margin="493.5,542,14,0" VerticalAlignment="Top" Width="132" Height="113" Grid.Column="1"/>
 
     </Grid>
 </Window>
