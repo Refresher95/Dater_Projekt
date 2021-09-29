@@ -31,10 +31,11 @@ namespace daterprojekt
             try
             {
                 // msda = hier wird eine sqlanweisung deklariert welche zum ausfüllen später genutzt wird
+                // Zieht Daten aus der Datenbank
                 MySqlDataAdapter msda_ = new MySqlDataAdapter(query, con);
                 // Erstellung einer Variable bezüglich für eine Datentabelle
                 DataTable DT = new DataTable();
-                // Mit der Var. "msda_"
+                // Jetzt werden die Daten in die erstelle c# Tabelle eingetragen
                 msda_.Fill(DT);
                 // Abfrage der Zeilen bei der erstellten Datentabelle (DT). Es wird nur eine geben, da man auch nicht mehrere PW und UN eingibt!!!
                 if (DT.Rows.Count == 1)
@@ -69,17 +70,16 @@ namespace daterprojekt
 
 
 
-        //Eigenes Zeug BITTE IGNORIEREN
-        //private void Mediumm_MediaEnded(object sender, RoutedEventArgs e)
-        //{
-        //    Mediumm.Position = TimeSpan.Zero;
-        //    Mediumm.Play();
-        //}
+        private void Mediumm_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            Mediumm.Position = TimeSpan.Zero;
+            Mediumm.Play();
+        }
 
-        //private void Mediumm_MediaOpened(object sender, RoutedEventArgs e)
-        //{
-        //    Mediumm.Position = TimeSpan.Zero;
-        //    Mediumm.Play();
-        //}
+        private void Mediumm_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            Mediumm.Position = TimeSpan.Zero;
+            Mediumm.Play();
+        }
     }
 }

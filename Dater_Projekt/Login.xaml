@@ -41,29 +41,11 @@
 
 
 
-        <!-- EIGENES ZEUG BITTE IGNORIEREN
+
         <Viewbox HorizontalAlignment="Stretch" Height="1080" Margin="0" VerticalAlignment="Stretch" Width="1920" Panel.ZIndex="-1" Grid.ColumnSpan="3" Grid.RowSpan="3">
             <MediaElement  Name="Mediumm" MediaEnded="Mediumm_MediaEnded" HorizontalAlignment="Stretch" Margin="0" Grid.RowSpan="3" VerticalAlignment="Stretch" Visibility="Visible" Panel.ZIndex="-1" Source="C:\Users\user\source\repos\daterprojekt\medien\1v.mov" Stretch="Fill" LoadedBehavior="Play" Volume="10" Position="0:0:1" Grid.ColumnSpan="3" MediaOpened="Mediumm_MediaOpened" UnloadedBehavior="Manual"/>
         </Viewbox>
 
 
-        <MediaElement Name="myMediaElement" Grid.ColumnSpan="3" Grid.RowSpan="3"  Panel.ZIndex="-1" Stretch="Fill" >
-            <MediaElement.Triggers>
-                <EventTrigger RoutedEvent="MediaElement.Loaded">
-                    <EventTrigger.Actions>
-                        <BeginStoryboard>
-                            <Storyboard>
-
-                                 The MediaTimeline has a RepeatBehavior="Forever" which makes the media play
-                     over and over indefinitely.
-                                <MediaTimeline Source="C:\Users\user\source\repos\daterprojekt\medien\1.gif" Storyboard.TargetName="myMediaElement"  
-                 RepeatBehavior="Forever" />
-
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger.Actions>
-                </EventTrigger>
-            </MediaElement.Triggers>
-        </MediaElement> -->
     </Grid>
 </Window>
