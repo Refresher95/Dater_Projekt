@@ -81,7 +81,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Hauptfenster.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -92,8 +92,8 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Hauptfenster.xaml.cs">
+      <DependentUpon>Hauptfenster.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Registration.xaml">
@@ -141,6 +141,17 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Bild1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2825787.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1v.mov" />
+    <Content Include="rick-astley-never-gonna-give-you-up-%28720p%29 - Kopie.mpeg" />
+    <Content Include="rick-astley-never-gonna-give-you-up-%28720p%29 - Kopie.mpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

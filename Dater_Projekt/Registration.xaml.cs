@@ -29,10 +29,11 @@ namespace daterprojekt
             //Verbindung var herstellen
             MySqlConnection con = new MySqlConnection("server=127.0.0.1;port=3306;username=root;password=;database=dater_benutzer_datensätze");
 
-            string formatedDateForMySql = "2004-10-12";
+
             ///string query = "INSERT INTO user (vorname, nachname, geburtsdatum, geschlecht, username, password) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + formatedDateForMySql + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
-            string query = "INSERT INTO user (vorname, nachname, geburtsdatum, geschlecht, username, password) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + formatedDateForMySql + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
+            string query = "INSERT INTO benutzer_table (vorname, nachname, geburtsdatum, geschlecht, username, password) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + txtgeburtstagsdatum.Text + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
             con.Open();
+            Reglab.Content = Title;
 
         }
 
@@ -43,24 +44,21 @@ namespace daterprojekt
 
         private void Register_confirm_Click(object sender, RoutedEventArgs e)
         {
-            //      MySqlConnection con = new MySqlConnection("server=127.0.0.1;port=3306;username=root;password=;database=dater_benutzer_datensätze");
-            //        string formatedDateForMySql = "2004-10-12";
-            //          string query = "INSERT INTO user (vorname, nachname, geburtsdatum, geschlecht, username, password) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + formatedDateForMySql + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
-            //            MySqlCommand sqlCommand = new MySqlCommand(query, con);
-            //Verbindung herstellen
-            //           con.Open();
-            //         sqlCommand.ExecuteNonQuery();
-            //       con.Close();
             MySqlConnection con = new MySqlConnection("server=127.0.0.1;port=3306;username=root;password=;database=dater_benutzer_datensätze");
 
             try
             {
-                string formatedDateForMySql = "2004-10-12";
+                string formatedDateForMySql = txtgeburtstagsdatum.Text;
+
+
+                //string formatedDateForMySql2 = Convert.ToDateTime(txtgeburtstagsdatum.Text);
                 string query = "INSERT INTO benutzer_table (Benutzer_vorname,Benutzer_nachname,Benutzer_Geburtstagsdatum,Benutzer_Geschlecht,Benutzer_Nutzername,Benutzer_Passwort) VALUES ('" + txtvorname.Text + "','" + txtnachanme.Text + "','" + formatedDateForMySql + "','" + txtgeschlecht.Text + "','" + txtnutzername.Text + "','" + txtpasswort.Text + "');";
+                
                 MySqlCommand sqlCommand = new MySqlCommand(query, con);
                 con.Open();
                 sqlCommand.ExecuteNonQuery();
                 con.Close();
+
             }
             catch (Exception ex)
             {
